@@ -49,7 +49,7 @@ Throughout this document, wherever a command wants an argument, it is given in *
 
 command **\<argument\>**{,**<argument\>**...**argument\>**}
 
-command **""<argument"">**{,**<""argument"">**...**\<argument>**}
+command **""<argument"">**{,**<""argument"">**...**""<argument>""**}
 
 ###### command <argument>{,<argument>...<argument>}
 
