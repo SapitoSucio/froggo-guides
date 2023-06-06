@@ -1,22 +1,20 @@
 ```cpp
-//===== rAthena Documentation================================\
-//= rAthena Script Commands\
-//===== By:==================================================\
-//= rAthena Dev Team\
-//===== Last Updated:========================================\
-//= 20220308\
-//===== Description:=========================================\
-//= A reference manual for the rAthena scripting language.\
-//= Commands are sorted depending on their functionality.\
+//===== rAthena Documentation================================
+//= rAthena Script Commands
+//===== By:==================================================
+//= rAthena Dev Team
+//===== Last Updated:========================================
+//= 20220308
+//===== Description:=========================================
+//= A reference manual for the rAthena scripting language.
+//= Commands are sorted depending on their functionality.
 //===========================================================
 ```
 
-
 This document is a reference manual for all the scripting commands and functions
-available in rAthena. 
+available in rAthena.
 
-It is not a simple tutorial. When people tell you to
-**"Read The F\*\*\*ing Manual"**, they mean this.
+It is not a simple tutorial. When people tell you to **"Read The F\*\*\*ing Manual"**, they mean this.
 
 This is not a place to teach you basic programming. This document will not teach
 you basic programming by itself. It's more of a reference for those who have at
@@ -29,7 +27,6 @@ A little learning never caused anyone's head to explode.
 
 ## Structure
 
-
 The script commands are listed in no particular order, but are grouped by
 relative function.
 
@@ -37,12 +34,12 @@ relative function.
 
 Descriptive text
 
-	Small example if possible. Will usually be incomplete, it's there just to
-	give you an idea of how it works in practice.
+```text
+Small example if possible. Will usually be incomplete, 
+it's there just to give you an idea of how it works in practice.
+```
 
-To find a specific command, use Ctrl+F, (or whatever keys call up a search
-function in whatever you're reading this with) put an asterisk (*) followed by the command
-name, and it should find the command description for you.
+To find a specific command, use Ctrl+F, (or whatever keys call up a search function in whatever you're reading this with) put an asterisk (*) followed by the command name, and it should find the command description for you.
 
 If you find anything missing, please let us know!
 
@@ -51,9 +48,10 @@ If you find anything missing, please let us know!
 Throughout this document, wherever a command wants an argument, it is given in **\<angle brackets\>**. This doesn't mean you should type the angle brackets. If an argument of a command is optional, it is given in `{curly brackets}`. You've doubtlessly seen this convention somewhere. If a command can optionally take an unspecified number of arguments, you'll see a list like this:
 
 command **\<argument\>**{,**<argument\>**...**argument\>**}
-command **\<argument>**{,**\<argument>**...**\<argument>**}
 
-#### command <argument>{,<argument>...<argument>}
+command **""<argument"">**{,**<""argument"">**...**\<argument>**}
+
+###### command <argument>{,<argument>...<argument>}
 
 #### command \<argument\>{,\<argument\>...\<argument\>}
 
