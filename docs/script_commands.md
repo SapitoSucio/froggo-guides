@@ -51,7 +51,11 @@ If you find anything missing, please let us know!
 Throughout this document, wherever a command wants an argument, it is given in **\<angle brackets\>**. This doesn't mean you should type the angle brackets. If an argument of a command is optional, it is given in `{curly brackets}`. You've doubtlessly seen this convention somewhere. If a command can optionally take an unspecified number of arguments, you'll see a list like this:
 
 command **\<argument\>**{,**<argument\>**...**argument\>**}
+command **\<argument>**{,**\<argument>**...**\<argument>**}
 
+#### command <argument>{,<argument>...<argument>}
+
+command \<argument>{,\<argument>...\<argument>}
 This still means they will want to be separated by commas.
 
 Where a command wants a string, it will be given in "`quotes`", if it's a number,
