@@ -48,10 +48,7 @@ If you find anything missing, please let us know!
 
 ## Syntax
 
-Throughout this document, wherever a command wants an argument, it is given in
-**\<angle brackets\>**. This doesn't mean you should type the angle brackets. If an argument of a command is optional, it is given in `{curly brackets}`. You've
-doubtlessly seen this convention somewhere. If a command can optionally take
-an unspecified number of arguments, you'll see a list like this:
+Throughout this document, wherever a command wants an argument, it is given in **\<angle brackets\>**. This doesn't mean you should type the angle brackets. If an argument of a command is optional, it is given in `{curly brackets}`. You've doubtlessly seen this convention somewhere. If a command can optionally take an unspecified number of arguments, you'll see a list like this:
 
 command **\<argument\>**{,**<argument\>**...**argument\>**}
 
@@ -65,7 +62,6 @@ idea.
 
 Wherever you refer to a map name, it's always 'map name' (.gat suffix is deprecated).
 
-
 ## Script loading structure
 
 Scripts are loaded by the map server as referenced in the 'conf/map_athena.conf'
@@ -74,7 +70,7 @@ files itself. Instead, it loads the file 'npc/(pre-)re/scripts_main.conf' which 
 contains references to other files. The actual scripts are loaded from txt
 files, which are linked up like this:
 
-npc: **\<path to a filename\>**
+##### npc: **\<path to a filename\>**
 
 Any line like this, invoked, ultimately, by 'map_athena.conf' will load up the
 script contained in this file, which will make the script available. No file
@@ -82,21 +78,23 @@ will get loaded twice to prevent possible errors.
 
 Another configuration file option of relevance is:
 
-delnpc: **\<path to a filename\>**
+#### delnpc: **\<path to a filename\>**
 
 This will unload a specified script filename from memory, which, while
 seemingly useless, may sometimes be required.
 
-Whenever '**//**' is encountered in a line upon reading, everything beyond this on
+Whenever '**`//`**' is encountered in a line upon reading, everything beyond this on
 that line is considered to be a comment and is ignored. This works wherever you
 place it.
 
-    // This line will be ignored when processing the script.
+```text
+// This line will be ignored when processing the script.
+```
 
-Block comments can also be used, where you can place /* and */ between any text you
+Block comments can also be used, where you can place `/*` and `*/` between any text you
 wish rAthena to ignore.
 
-#### Example:
+#### Example
 
 ```cpp
 /* This text,
@@ -104,7 +102,6 @@ wish rAthena to ignore.
  * is ignored, until the following
  * symbol is encountered: */
 ```
-
 
 \*The asterisks (\*) in front of each line is a personal preference and is not required.*
 
