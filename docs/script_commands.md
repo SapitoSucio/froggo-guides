@@ -55,7 +55,10 @@ command **\<argument>**{,**\<argument>**...**\<argument>**}
 
 #### command <argument>{,<argument>...<argument>}
 
-command \<argument>{,\<argument>...\<argument>}
+#### command \<argument\>{,\<argument\>...\<argument\>}
+
+command \<argument\>{,\<argument>...<argument\>}
+
 This still means they will want to be separated by commas.
 
 Where a command wants a string, it will be given in "`quotes`", if it's a number,
