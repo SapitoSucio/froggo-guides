@@ -49,11 +49,11 @@ If you find anything missing, please let us know!
 ## Syntax
 
 Throughout this document, wherever a command wants an argument, it is given in
-**\<angle brackets\>**. This doesn't mean you should type the angle brackets. If an argument of a command is optional, it is given in {curly brackets}. You've
+**<angle brackets>**. This doesn't mean you should type the angle brackets. If an argument of a command is optional, it is given in {curly brackets}. You've
 doubtlessly seen this convention somewhere. If a command can optionally take
 an unspecified number of arguments, you'll see a list like this:
 
-command **\<argument\>**{,**\<argument\>**...**\<argument\>**}
+command **<argument>**{,**<argument>**...**argument>**}
 
 This still means they will want to be separated by commas.
 
