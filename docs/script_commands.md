@@ -45,7 +45,7 @@ If you find anything missing, please let us know!
 
 ## Syntax
 
-Throughout this document, wherever a command wants an argument, it is given in **\<angle brackets\>**. This doesn't mean you should type the angle brackets. If an argument of a command is optional, it is given in `{curly brackets}`. You've doubtlessly seen this convention somewhere. If a command can optionally take an unspecified number of arguments, you'll see a list like this:
+Throughout this document, wherever a command wants an argument, it is given in **<angle brackets\>**. This doesn't mean you should type the angle brackets. If an argument of a command is optional, it is given in `{curly brackets}`. You've doubtlessly seen this convention somewhere. If a command can optionally take an unspecified number of arguments, you'll see a list like this:
 
 ```text
 command <argument\>{,<argument\>...<argument\>}
@@ -69,7 +69,7 @@ files itself. Instead, it loads the file 'npc/(pre-)re/scripts_main.conf' which 
 contains references to other files. The actual scripts are loaded from txt
 files, which are linked up like this:
 
-##### npc: **<path to a filename\>**
+###### npc: **<path to a filename\>**
 
 Any line like this, invoked, ultimately, by 'map_athena.conf' will load up the
 script contained in this file, which will make the script available. No file
@@ -122,9 +122,9 @@ this language.
 
 Here is a list of valid top-level commands:
 
-## Set a map flag:
+## Set a map flag
 
-**<map name\>****\%TAB\%**mapflag**\%TAB\%****<flag\>**
+**<map name\>****%TAB%**mapflag**%TAB\%****<flag\>**
 
 This will, upon loading, set a specified map flag on a map you like. These are
 normally in files inside 'npc/mapflag' and are loaded first, so by the time the
