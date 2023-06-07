@@ -327,24 +327,21 @@ This will define an NPC object not triggerable by normal means. This would norma
 
 > Note: Additionally barter shops can be defined in `npc/barters.yml`
 
-This will define a shop NPC, which, when triggered (which can only be done by
-clicking) will cause a shop window to come up. No code whatsoever runs in shop
-NPCs and you can`t change the prices otherwise than by editing the script
-itself.
+This will define a shop NPC, which, when triggered (which can only be done by clicking) will cause a shop window to come up. No code whatsoever runs in shop NPCs and you can`t change the prices otherwise than by editing the script itself.
 
-The Item ID is the number of item in the `db/item_db.yml` database. If Price is set to `-1`, the `buy price` given in the item database will be used. Otherwise, the price you gave will be used for this item, which is how you create differing
-prices for items in different shops.
+The Item ID is the number of item in the `db/item_db.yml` database. If Price is set to `-1`, the `buy price` given in the item database will be used. Otherwise, the price you gave will be used for this item, which is how you create differing prices for items in different shops.
 
 Optionally you can specify the discount option and set it to "`yes`" or "`no`", to enable or disable discounting.
 
 There are other types of shops available:
 
-| Shop Type   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-|-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Shop Type   | Description|
+|-------------|------------|
 | cashshop    | Uses the Cash Shop interface to buy items with special points stored as account variables called `#CASHPOINTS` and `#KAFRAPOINTS`. Does not allow selling items. The layout used to define sale items still counts and "<price\>" refers to how many points will be spent purchasing the item.         |
 | itemshop    | Uses the Shop interface to buy items with a specific item or special points from a variable.     |
 | pointshop   | Uses the Shop interface to buy items with special points from a variable. Only supports permanent character variables, temporary character variables, permanent local account variables or permanent global account variables. These variables must be of integer type, not string. The `discount` flag is an optional value which makes the price at that shop become affected by discount skill.|
-| marketshop  | Can have limited quantity of an item in stock. Use -1 in the stock field to have unlimited stock in a marketshop. |                                                                                                                  
+| marketshop  | Can have limited quantity of an item in stock. Use -1 in the stock field to have unlimited stock in a marketshop. |
+
 ## Define an warp/shop/cashshop/itemshop/pointshop/NPC duplicate.
 
 warp/warp2: **<map name\>,<x\>,<y\>,<facing\>%TAB%duplicate(<label\>)%TAB%<NPC Name\>%TAB%<spanx\>,<spany\>\
