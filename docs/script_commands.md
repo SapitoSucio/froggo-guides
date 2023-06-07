@@ -11,6 +11,19 @@
 //===========================================================
 ```
 
+=== "Unordered list"
+
+    * Sed sagittis eleifend rutrum
+    * Donec vitae suscipit est
+    * Nulla tempor lobortis orci
+
+=== "Ordered list"
+
+    1. Sed sagittis eleifend rutrum
+    2. Donec vitae suscipit est
+    3. Nulla tempor lobortis orci
+
+
 This document is a reference manual for all the scripting commands and functions
 available in rAthena.
 
@@ -337,14 +350,15 @@ There are other types of shops available:
 
 | Shop Type   | Description|
 |-------------|------------|
-| cashshop    | Uses the Cash Shop interface to buy items with special points stored as account variables called `#CASHPOINTS` and `#KAFRAPOINTS`. Does not allow selling items. The layout used to define sale items still counts and "<price\>" refers to how many points will be spent purchasing the item.         |
+| cashshop    | Uses the Cash Shop interface to buy items with special points stored as account variables called `#CASHPOINTS` and `#KAFRAPOINTS`. Does not allow selling items. The layout used to define sale items still counts and `<price>` refers to how many points will be spent purchasing the item.         |
 | itemshop    | Uses the Shop interface to buy items with a specific item or special points from a variable.     |
 | pointshop   | Uses the Shop interface to buy items with special points from a variable. Only supports permanent character variables, temporary character variables, permanent local account variables or permanent global account variables. These variables must be of integer type, not string. The `discount` flag is an optional value which makes the price at that shop become affected by discount skill.|
-| marketshop  | Can have limited quantity of an item in stock. Use -1 in the stock field to have unlimited stock in a marketshop. |
+| marketshop  | Can have limited quantity of an item in stock. Use `-1` in the stock field to have unlimited stock in a marketshop. |
 
 ## Define an warp/shop/cashshop/itemshop/pointshop/NPC duplicate.
 
-warp/warp2: **<map name\>,<x\>,<y\>,<facing\>%TAB%duplicate(<label\>)%TAB%<NPC Name\>%TAB%<spanx\>,<spany\>\
+warp/warp2: **<map name\>,<x\>,<y\>,<facing\>%TAB%duplicate(<label\>)%TAB%<NPC Name\>%TAB%<spanx\>,<spany\>
+
 shop/cashshop/itemshop/pointshop/npc: -%TAB%duplicate(<label\>)%TAB%<NPC Name\>%TAB%<sprite id\>\
 shop/cashshop/itemshop/pointshop/npc: <map name\>,<x\>,<y\>,<facing\>%TAB%duplicate(<label\>)%TAB%<NPC Name\>%TAB%<sprite id\>\
 npc: -%TAB%duplicate(<label\>)%TAB%<NPC Name\>%TAB%<sprite id\>,<triggerX\>,<triggerY\>\
@@ -361,14 +375,10 @@ is obtained from the definition of the duplicate (not inherited).
 
 function **%TAB%****script****%TAB%****<function name\>****%TAB%**{**<code\>**}
 
-This will define a function object, callable with the `callfunc` command (see
-below). This object will load on every map server separately, so you can get at
-it from anywhere. It's not possible to call the code in this object by
+This will define a function object, callable with the `callfunc` command (see below). This object will load on every map server separately, so you can get at it from anywhere. It's not possible to call the code in this object by
 anything other than the `callfunc` script command.
 
-The code part is the script code that will execute whenever the function is
-called with `callfunc`. It has to be in curly brackets, unlike elsewhere where
-we use curly brackets, these do NOT signify an optional parameter.
+The code part is the script code that will execute whenever the function is called with `callfunc`. It has to be in curly brackets, unlike elsewhere where we use curly brackets, these do NOT signify an optional parameter.
 
 Once an object is defined which has a `code` field to its definition, it
 contains script commands which can actually be triggered and executed.
