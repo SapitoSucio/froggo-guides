@@ -1,13 +1,41 @@
-site_name: Sapito Sucio 🐸
+site_name: rAthena User Guides
+site_url: https://rathena.github.io/user-guides/
+repo_url: https://github.com/rathena/user-guides/
+site_description: User Guides created by the rAthena community. These guides are generated from a Github repository and turned into an easy to use website.
+site_author: rAthena Developement Team
+copyright: Copyright rAthena Development Team, 2011 - 2023
+docs_dir: guides
+site_dir: _site/
+
+nav:
+    - Guides Home: index.md
+    - Installing rAthena:
+      - General: installing.md
+      - Debian: installing/debian.md
+      - Docker: installing/docker.md
+  # - Network Settings: network-settings.md
+  # - MySQL Tables: mysql-tables.md
+    - MSVS Debugging: debugging.md
+    - Extensions: extensions.md
+    - Links:
+      - Github: https://github.com/rathena/
+      - Forums: https://rathena.org/board/
+      - Wiki: https://rathena.org/wiki/
+      - Discord: https://discord.gg/kMeMXWEvSV
 theme:
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: img/favicon.ico
+  logo: img/logo.png
   name: material
   features:
     - announce.dismiss
-    - content.action.edit
-    - content.action.view
+    # - content.action.edit
+    # - content.action.view
     - content.code.annotate
     - content.code.copy
-    # - content.tabs.link
+    - content.tabs.link
     - content.tooltips
     # - header.autohide
     # - navigation.expand
@@ -15,8 +43,8 @@ theme:
     - navigation.indexes
     - navigation.instant
     # - navigation.prune
-    - navigation.sections
-    - navigation.tabs
+    # - navigation.sections
+    # - navigation.tabs
     # - navigation.tabs.sticky
     - navigation.top
     - navigation.tracking
@@ -32,28 +60,23 @@ theme:
         icon: material/toggle-switch-off-outline 
         name: Switch to dark mode
       primary: light blue
-      accent: light green
+      accent: teal
     - scheme: slate 
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode    
       primary: light blue
-      accent: light green
- 
-# Plugins
-plugins:
-  - search:
-      separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
-  - social
-
+      accent: teal
 extra:
   social:
-    - icon: fontawesome/brands/github-alt
-      link: https://github.com/james-willett
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/TheJamesWillett
-    - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/in/willettjames/
+    - icon: fontawesome/brands/github
+      link: https://github.com/rathena/
+    - icon: fontawesome/solid/message
+      link: https://rathena.org/board/
+    - icon: fontawesome/brands/wikipedia-w
+      link: https://rathena.org/wiki/
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/rathena-96459614895226880
 
 markdown_extensions:
   - abbr
@@ -95,7 +118,3 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
-
-
-copyright: |
-  &copy; 2023 <a href="https://github.com/sapitosucio"  target="_blank" rel="noopener">Sapito Sucio 🐸</a>

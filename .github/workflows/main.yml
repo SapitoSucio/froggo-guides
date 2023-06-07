@@ -1,4 +1,4 @@
-name: ci 
+name: Deploy Guides 
 on:
   push:
     branches:
