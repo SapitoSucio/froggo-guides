@@ -2033,13 +2033,13 @@ Note that the name may only contain alphanumeric characters and underscore.
 
 Usage:
 
-    1. Declare the function.
-	function **<function name\>**;
-    2. Call the function anywhere within the script.
-       It can also return a value when used with parentheses.
-	**<function name\>**;
-    3. Define the function within the script.
-	**<function name\>** {**<code\>**}
+1. Declare the function.\
+`function <function name>`;
+1. Call the function anywhere within the script.
+   It can also return a value when used with parentheses.\
+`<function name>`;
+1. Define the function within the script.\
+`<function name> {<code\>}`
 
 #### Example:
 
