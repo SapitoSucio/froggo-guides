@@ -114,7 +114,7 @@ normally start with a map name.
 What's more confusing about the top-level commands is that most of them use a
 tab symbol to divide their arguments.
 
-To prevent problems and confusion, the tab symbols are written as '**\%TAB\%**'
+To prevent problems and confusion, the tab symbols are written as '**%TAB%**'
 throughout this document, even though this makes the text a bit less readable.
 
 Using an invisible symbol to denote arguments is one of the bad things about
@@ -124,7 +124,7 @@ Here is a list of valid top-level commands:
 
 ## Set a map flag
 
-**<map name\>****%TAB%**mapflag**%TAB\%****<flag\>**
+**<map name\>****%TAB%**mapflag**%TAB%****<flag\>**
 
 This will, upon loading, set a specified map flag on a map you like. These are
 normally in files inside 'npc/mapflag' and are loaded first, so by the time the
@@ -134,7 +134,7 @@ and 'doc/mapflags.txt'.
 
 ## Create a permanent monster spawn:
 
-**<map name\>**{,**<x\>**{,**<y\>**{,**<xs\>**{,**<ys\>**}}}}**\%TAB\%**monster**\%TAB\%** **<monster name\>**{,**<monster level\>**}**\%TAB\%** **<mob id\>**,**<amount\>**{,**<delay1\>**{,**<delay2\>**{,**<event\>**{,**<mob size\>**{,**<mob ai\>**}}}}}
+**<map name\>**{,**<x\>**{,**<y\>**{,**<xs\>**{,**<ys\>**}}}}**%TAB%**monster**%TAB%** **<monster name\>**{,**<monster level\>**}**%TAB%** **<mob id\>**,**<amount\>**{,**<delay1\>**{,**<delay2\>**{,**<event\>**{,**<mob size\>**{,**<mob ai\>**}}}}}
 
 Map name is the name of the map the monsters will spawn on. x,y are the
 coordinates where the mob should spawn. If **xs** and **ys** are non-zero, they
@@ -230,8 +230,8 @@ ex: if your NPC is named 'Hunter#hunter1', it will be displayed as 'Hunter'
 
 ## Define a warp point
 
-**<from mapname\>**,**<fromX\>**,**<fromY\>**,**<facing\>****%TAB%warp\%TAB\%****<warp name\>** **\%TAB\%** **<spanx\>**,**<spany\>**,**<to mapname\>**,**<toX\>**,**<toY\>**\
-**<from mapname\>**,**<fromX\>**,**<fromY\>**,**<facing\>****%TAB%warp2\%TAB\%****<warp name\>** **\%TAB\%<spanx\>**,**<spany\>**,**<to mapname\>**,**<toX\>**,**<toY\>**\
+**<from mapname\>**,**<fromX\>**,**<fromY\>**,**<facing\>****%TAB%warp%TAB%****<warp name\>** **%TAB%** **<spanx\>**,**<spany\>**,**<to mapname\>**,**<toX\>**,**<toY\>**\
+**<from mapname\>**,**<fromX\>**,**<fromY\>**,**<facing\>****%TAB%warp2%TAB%****<warp name\>** **%TAB%<spanx\>**,**<spany\>**,**<to mapname\>**,**<toX\>**,**<toY\>**\
 **<from mapname>,<fromX>,<fromY>,<facing>%TAB%warp(<state>)%TAB%<warp name>%TAB%<spanx>,<spany>,<to mapname>,<toX>,<toY>\
 **<from mapname>,<fromX>,<fromY>,<facing>%TAB%warp2(<state>)%TAB%<warp name>%TAB%<spanx>,<spany>,<to mapname>,<toX>,<toY>
 
@@ -255,8 +255,8 @@ Unlike 'warp', 'warp2' will also be triggered by hidden player.
 
 ## Define an NPC object.
 
-**<map name\>**,**<x\>**,**<y\>**,**<facing\>****\%TAB\%script\%TAB\%****<NPC Name\>\%TAB\%<sprite id\>,{<code\>**}\
-**<map name\>**,**<x\>**,**<y\>**,**<facing\>****\%TAB\%**script**\%TAB\%****<NPC Name\>****\%TAB\%****<sprite id\>**,**<triggerX\>**,**<triggerY\>**,{**<code\>**}
+**<map name\>**,**<x\>**,**<y\>**,**<facing\>****%TAB%script%TAB%****<NPC Name\>%TAB%<sprite id\>,{<code\>**}\
+**<map name\>**,**<x\>**,**<y\>**,**<facing\>****%TAB%**script**%TAB%****<NPC Name\>****%TAB%****<sprite id\>**,**<triggerX\>**,**<triggerY\>**,{**<code\>**}
 
 This will place an NPC object on a specified map at the specified location, and
 is a top-level command you will use the most in your custom scripting. The NPCs
@@ -311,7 +311,7 @@ lighthalzen,306,267,5	script(CLOAKED)	Skia#ep162_04	4_EP16_SKIA,{
 
 ## Define a 'floating' NPC object.
 
--**\%TAB\%**script**\%TAB\%****<NPC Name\>****\%TAB\%**-1,{**<code\>**}
+-**%TAB%**script**%TAB%****<NPC Name\>****%TAB%**-1,{**<code\>**}
 
 This will define an NPC object not triggerable by normal means. This would
 normally mean it's pointless since it can't do anything, but there are
@@ -320,17 +320,17 @@ these floating NPC objects are for. More on that below.
 
 ## Define a shop/cashshop/itemshop/pointshop NPC.
 
--**\%TAB\%shop\%TAB\%<NPC Name\>\%TAB\%<spriteid\>{,discount},<itemid\>:<price\>{,<itemid\>:<price\>...}<mapname\>,<x\>,<y\>,<facing\>\%TAB\%shop\%TAB\%<NPC Name\>\%TAB\%<spriteid\>{,discount},<itemid\>:<price\>{,<itemid\>:<price\>...}**
+-**%TAB%shop%TAB%<NPC Name\>%TAB%<spriteid\>{,discount},<itemid\>:<price\>{,<itemid\>:<price\>...}<mapname\>,<x\>,<y\>,<facing\>%TAB%shop%TAB%<NPC Name\>%TAB%<spriteid\>{,discount},<itemid\>:<price\>{,<itemid\>:<price\>...}**
 
--**\%TAB\%cashshop\%TAB\%<NPC Name\>\%TAB\%<spriteid\>,<itemid\>:<price\>{,<itemid\>:<price\>...}<mapname\>,<x\>,<y\>,<facing\>\%TAB\%cashshop\%TAB\%<NPC Name\>\%TAB\%<spriteid\>,<itemid\>:<price\>{,<itemid\>:<price\>...}**
+-**%TAB%cashshop%TAB%<NPC Name\>%TAB%<spriteid\>,<itemid\>:<price\>{,<itemid\>:<price\>...}<mapname\>,<x\>,<y\>,<facing\>%TAB%cashshop%TAB%<NPC Name\>%TAB%<spriteid\>,<itemid\>:<price\>{,<itemid\>:<price\>...}**
 
-\-**\%TAB\%itemshop\%TAB\%<NPC Name\>\%TAB\%<sprite id\>,<costitemid\>{:<discount\>},<itemid\>:<price\>{,<itemid\>:<price\>...}
-<map name\>,<x\>,<y\>,<facing\>\%TAB\%itemshop\%TAB\%<NPC Name\>\%TAB\%<sprite id\>,<costitemid\>{:<discount\>},<itemid\>:<price\>{,<itemid\>:<price\>...}**
+\-**%TAB%itemshop%TAB%<NPC Name\>%TAB%<sprite id\>,<costitemid\>{:<discount\>},<itemid\>:<price\>{,<itemid\>:<price\>...}
+<map name\>,<x\>,<y\>,<facing\>%TAB%itemshop%TAB%<NPC Name\>%TAB%<sprite id\>,<costitemid\>{:<discount\>},<itemid\>:<price\>{,<itemid\>:<price\>...}**
 
-\-**\%TAB\%pointshop\%TAB\%<NPC Name\>\%TAB\%<sprite id\>,<costvariable\>{:<discount\>},<itemid\>:<price\>{,<itemid\>:<price\>...}
-<map name\>,<x\>,<y\>,<facing\>\%TAB\%pointshop\%TAB\%<NPC Name\>\%TAB\%<sprite id\>,<costvariable\>{:<discount\>},<itemid\>:<price\>{,<itemid\>:<price\>...}**
+\-**%TAB%pointshop%TAB%<NPC Name\>%TAB%<sprite id\>,<costvariable\>{:<discount\>},<itemid\>:<price\>{,<itemid\>:<price\>...}
+<map name\>,<x\>,<y\>,<facing\>%TAB%pointshop%TAB%<NPC Name\>%TAB%<sprite id\>,<costvariable\>{:<discount\>},<itemid\>:<price\>{,<itemid\>:<price\>...}**
 
-\-**<map name\>,<x\>,<y\>,<facing\>\%TAB\%marketshop\%TAB\%<NPC Name\>\%TAB\%<sprite id\>,<itemid\>:<price\>:<stock\>{,<itemid\>:<price\>:<stock\>...}**
+\-**<map name\>,<x\>,<y\>,<facing\>%TAB%marketshop%TAB%<NPC Name\>%TAB%<sprite id\>,<itemid\>:<price\>:<stock\>{,<itemid\>:<price\>:<stock\>...}**
 
 > Note: Additionally barter shops can be defined in npc/barters.yml
 
@@ -354,11 +354,11 @@ There are other types of shops available:
 | marketshop  | Can have limited quantity of an item in stock. Use -1 in the stock field to have unlimited stock in a marketshop. |                                                                                                                  
 ## Define an warp/shop/cashshop/itemshop/pointshop/NPC duplicate.
 
-warp/warp2: **<map name\>,<x\>,<y\>,<facing\>\%TAB\%duplicate(<label\>)\%TAB\%<NPC Name\>\%TAB\%<spanx\>,<spany\>\
-shop/cashshop/itemshop/pointshop/npc: -\%TAB\%duplicate(<label\>)\%TAB\%<NPC Name\>\%TAB\%<sprite id\>\
-shop/cashshop/itemshop/pointshop/npc: <map name\>,<x\>,<y\>,<facing\>\%TAB\%duplicate(<label\>)\%TAB\%<NPC Name\>\%TAB\%<sprite id\>\
-npc: -\%TAB\%duplicate(<label\>)\%TAB\%<NPC Name\>\%TAB\%<sprite id\>,<triggerX\>,<triggerY\>\
-npc: <map name\>,<x\>,<y\>,<facing\>\%TAB\%duplicate(<label\>)\%TAB\%<NPC Name\>\%TAB\%<sprite id\>,<triggerX\>,<triggerY\>**
+warp/warp2: **<map name\>,<x\>,<y\>,<facing\>%TAB%duplicate(<label\>)%TAB%<NPC Name\>%TAB%<spanx\>,<spany\>\
+shop/cashshop/itemshop/pointshop/npc: -%TAB%duplicate(<label\>)%TAB%<NPC Name\>%TAB%<sprite id\>\
+shop/cashshop/itemshop/pointshop/npc: <map name\>,<x\>,<y\>,<facing\>%TAB%duplicate(<label\>)%TAB%<NPC Name\>%TAB%<sprite id\>\
+npc: -%TAB%duplicate(<label\>)%TAB%<NPC Name\>%TAB%<sprite id\>,<triggerX\>,<triggerY\>\
+npc: <map name\>,<x\>,<y\>,<facing\>%TAB%duplicate(<label\>)%TAB%<NPC Name\>%TAB%<sprite id\>,<triggerX\>,<triggerY\>**
 
 This will duplicate an warp/shop/cashshop/itemshop/pointshop/NPC referred to by 'label'.
 Warp duplicates inherit the target location.
@@ -369,7 +369,7 @@ is obtained from the definition of the duplicate (not inherited).
 
 ## Define a function object
 
-function **\%TAB\%****script****\%TAB\%****<function name\>****\%TAB\%**{**<code\>**}
+function **%TAB%****script****%TAB%****<function name\>****%TAB%**{**<code\>**}
 
 This will define a function object, callable with the 'callfunc' command (see
 below). This object will load on every map server separately, so you can get at
@@ -710,7 +710,7 @@ common mathematical operations or conditional operators
 | **"-"** | Will subtract two numbers.  |
 |  **"*"** | will multiply two numbers.  |
 | **"\/"**  |  will divide two numbers. Note that this is an integer division, i.e. 7/2 is not equal 3.5, it's equal 3. |
-| **"\%"**  | will give you the remainder of the division. 7%2 is equal to 1.  |
+| **"%"**  | will give you the remainder of the division. 7%2 is equal to 1.  |
 
 
 There are also conditional operators. This has to do with the conditional
@@ -1786,7 +1786,7 @@ any script on any map server. Using the '`return`' command it will come back to
 the place that called it.
 
 ```cpp
-place,50,50,6%TAB\%script%TAB%Woman%TAB%115,{
+place,50,50,6%TAB%script%TAB%Woman%TAB%115,{
    mes "[Woman]"
    mes "Let's see if you win...";
    callfunc "funcNPC";
@@ -1998,7 +1998,7 @@ provided.
 ```cpp
 callfunc "funcNPC",5,4,3;
 ...
-function%TAB\%script%TAB%funcNPC%TAB%{
+function%TAB%script%TAB%funcNPC%TAB%{
    .@count = getargcount(); // 3
    ...
 }
@@ -3604,12 +3604,12 @@ search value, it will NOT locate the object by name.
 #### Example:
 
 ```cpp
-prontera,164,301,3**\%TAB\%**script**\%TAB\%**Meh**\%TAB\%**730,{
+prontera,164,301,3**%TAB%**script**%TAB%**Meh**%TAB%**730,{
      mes "My name is Meh. I'm here so that Nyah can find me.";
      close;
  }
 
- prontera,164,299,3**\%TAB\%**script**\%TAB\%**Nyah**\%TAB\%**730,{
+ prontera,164,299,3**%TAB%**script**%TAB%**Nyah**%TAB%**730,{
      mes "My name is Nyah.";
      mes "I will now search for Meh all across the world!";
      if (getmapxy(.@mapname$, .@mapx, .@mapy, BL_NPC, "Meh") != 0) {
