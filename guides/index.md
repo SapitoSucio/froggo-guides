@@ -5,13 +5,84 @@
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/rathena/user-guides/deploy_guides.yml?label=automatic%20building&style=for-the-badge)](https://github.com/rathena/user-guides/actions) 
 ![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/rathena/user-guides?label=Open%20PR&style=for-the-badge)
 
-??? danger optional-class "Summary"
-    Here's some content.
 
-???+ note
-	ola
+We can now have abbreviations like this rA or this RO .
+
+*[rA]: rAthena
+*[RO]: Ragnarok Online
+
+!!! note
+
+    This is a non collapsable note.
+
+=== "C"
+
+    ``` c
+    #include <stdio.h>
+
+    int main(void) {
+      printf("Hello world!\n");
+      return 0;
+    }
+    ```
+
+=== "C++"
+
+    ``` c++
+    #include <iostream>
+
+    int main(void) {
+      std::cout << "Tu mamá jjejejjeje!" << std::endl;
+      return 0;
+    }
+    ```
+!!! warning "Warningeru"
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+
+??? tip " xD"
+
+    (Se hace la que no me conoce)
+
+	(Pero en mi cama se volvió un vicio como a las cinco doce)
+
+	(Yeah, yeah, yeah, yeah)
+
+	Nunca se deja ver (Nunca se deja ver)
+
+	No sabe disimular (No sabe disimular)
+
+==mark me==
+
+==smart==mark==
+
+++ctrl+alt+delete++
+
+++alt+"F4"++
+
+inline color: `#!py3 import pymdownx; pymdownx.__version__`.
+
+??? info "(c)"
+
+    It doesn't render on the footer copyright msg tho <:(
+(r)
+(tm)
 
 
+Task List
+
+- [X] item 1
+    * [X] item A
+    * [ ] item B
+        more text
+        + [x] item a
+        + [ ] item b
+        + [x] item c
+    * [X] item C
+- [ ] item 2
+- [ ] item 3
 
 
 # Hello~! What?!
