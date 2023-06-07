@@ -11,9 +11,6 @@
 ???+ note
 	ola
 
-/// admonition | Some title
-Some content
-///
 
 
 
