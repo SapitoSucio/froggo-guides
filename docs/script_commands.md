@@ -311,10 +311,7 @@ lighthalzen,306,267,5	script(CLOAKED)	Skia#ep162_04	4_EP16_SKIA,{
 
 -**%TAB%**script**%TAB%****<NPC Name\>****%TAB%**-1,{**<code\>**}
 
-This will define an NPC object not triggerable by normal means. This would
-normally mean It's pointless since it can`t do anything, but there are
-exceptions, mostly related to running scripts at specified time, which is what
-these floating NPC objects are for. More on that below.
+This will define an NPC object not triggerable by normal means. This would normally mean It's pointless since it can`t do anything, but there are exceptions, mostly related to running scripts at specified time, which is what these floating NPC objects are for. More on that below.
 
 ## Define a shop/cashshop/itemshop/pointshop NPC.
 
@@ -322,15 +319,13 @@ these floating NPC objects are for. More on that below.
 
 -**%TAB%cashshop%TAB%<NPC Name\>%TAB%<spriteid\>,<itemid\>:<price\>{,<itemid\>:<price\>...}<mapname\>,<x\>,<y\>,<facing\>%TAB%cashshop%TAB%<NPC Name\>%TAB%<spriteid\>,<itemid\>:<price\>{,<itemid\>:<price\>...}**
 
-\-**%TAB%itemshop%TAB%<NPC Name\>%TAB%<sprite id\>,<costitemid\>{:<discount\>},<itemid\>:<price\>{,<itemid\>:<price\>...}
-<map name\>,<x\>,<y\>,<facing\>%TAB%itemshop%TAB%<NPC Name\>%TAB%<sprite id\>,<costitemid\>{:<discount\>},<itemid\>:<price\>{,<itemid\>:<price\>...}**
+-**%TAB%itemshop%TAB%<NPC Name\>%TAB%<spriteid\>,<costitemid\>{:<discount\>},<itemid\>:<price\>{,<itemid\>:<price\>...}<map name\>,<x\>,<y\>,<facing\>%TAB%itemshop%TAB%<NPC Name\>%TAB%<spriteid\>,<costitemid\>{:<discount\>},<itemid\>:<price\>{,<itemid\>:<price\>...}**
 
-\-**%TAB%pointshop%TAB%<NPC Name\>%TAB%<sprite id\>,<costvariable\>{:<discount\>},<itemid\>:<price\>{,<itemid\>:<price\>...}
-<map name\>,<x\>,<y\>,<facing\>%TAB%pointshop%TAB%<NPC Name\>%TAB%<sprite id\>,<costvariable\>{:<discount\>},<itemid\>:<price\>{,<itemid\>:<price\>...}**
+-**%TAB%pointshop%TAB%<NPC Name\>%TAB%<spriteid\>,<costvariable\>{:<discount\>},<itemid\>:<price\>{,<itemid\>:<price\>...}<map name\>,<x\>,<y\>,<facing\>%TAB%pointshop%TAB%<NPC Name\>%TAB%<spriteid\>,<costvariable\>{:<discount\>},<itemid\>:<price\>{,<itemid\>:<price\>...}**
 
-\-**<map name\>,<x\>,<y\>,<facing\>%TAB%marketshop%TAB%<NPC Name\>%TAB%<sprite id\>,<itemid\>:<price\>:<stock\>{,<itemid\>:<price\>:<stock\>...}**
+-**<map name\>,<x\>,<y\>,<facing\>%TAB%marketshop%TAB%<NPC Name\>%TAB%<spriteid\>,<itemid\>:<price\>:<stock\>{,<itemid\>:<price\>:<stock\>...}**
 
-> Note: Additionally barter shops can be defined in npc/barters.yml
+> Note: Additionally barter shops can be defined in `npc/barters.yml`
 
 This will define a shop NPC, which, when triggered (which can only be done by
 clicking) will cause a shop window to come up. No code whatsoever runs in shop
@@ -2092,8 +2087,6 @@ prontera,150,150,0	script	TestNPC	123,{
 	}
 }
 ```
-
-
 
 ---------------------------------------
 
