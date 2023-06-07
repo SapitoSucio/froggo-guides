@@ -52,16 +52,16 @@ command **\<argument\>**{,**<argument\>**...**<argument\>**}
 command **""<argument"">**{,**<""argument"">**...**""<argument>""**}
 
 """
-###### command \\<argument\\>{,\\<argument\\>...\\<argument\\>}
+###### command \<argument\>{,\<argument\>...\<argument\>}
 """
 
 ""
 #### command \<argument\>{\<argument\>..\<argument\>}
 ""
 
-#### command ""<argument>""{""<argument>""..""<argument>""}
+#### command <argument>{,<argument>...<argument>}
 
-command \<argument\>{,\<argument>...<argument\>}
+#### command \<argument\>{,<argument\>...<argument\>}
 
 This still means they will want to be separated by commas.
 
